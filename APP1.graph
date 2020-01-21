@@ -1,0 +1,12 @@
+ #! /usr/bin/gnuplot -persist
+unset multiplot
+set terminal postscript eps enhanced
+set output "APP1.eps"
+set encoding koi8r
+#set logscale x
+set xlabel "Temp" font "Helvetica,18"
+set ylabel "PP2" font "Helvetica,18"
+set key right
+plot [][0:]'APP1.dat' using 1:2 w line, \
+'APP1.dat' using 1:2
+ 

@@ -1,0 +1,12 @@
+ #! /usr/bin/gnuplot -persist
+unset multiplot
+set terminal postscript eps enhanced
+set output "energyAVG.eps"
+set encoding koi8r
+#set logscale x
+set xlabel "Temp" font "Helvetica,18"
+set ylabel "AE" font "Helvetica,18"
+set key right
+plot 'energyAVG.dat' using 1:2 w line, \
+'energyAVG.dat' using 1:2
+ 

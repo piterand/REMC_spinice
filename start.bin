@@ -1,0 +1,6 @@
+#!/bin/bash
+#SBATCH --partition=main
+#SBATCH -n 200
+#SBATCH --job-name=wl_sequential_test
+
+srun ./op_mc_hc
